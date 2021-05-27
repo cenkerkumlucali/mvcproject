@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2 style="margin-left: 1.7rem">İstatistikler</h2>
+
+<div class="row">
+    <div class="col-md-3" style="text-align: center; background: #9d64b0;margin: 2rem;">
+        <br />
+        <h2 style="color: #fff">@ViewBag.totalCategories</h2>
+        <p style="color: #fff">Kategori sayısı</p>
+    </div>
+    <div class="col-md-3" style="text-align: center; background: #2691d8;margin: 2rem;">
+        <br />
+        <h2 style="color: #fff">@ViewBag.getSoftwareCategories</h2>
+        <p style="color: #fff">Yazılım kategorisine ait başlık sayısı</p>
+    </div>
+    <div class="col-md-3" style="text-align: center; background: #1bb370;margin: 2rem;">
+        <br />
+        <h2 style="color: #fff">@ViewBag.checkWriterNameForA</h2>
+        <p style="color: #fff">İsminin içinde "a" geçen yazarlar</p>
+    </div>
+    <div class="col-md-3" style="text-align: center;background: #8d4da8;margin: 2rem;">
+        <br />
+        <h2 style="color: #fff">@ViewBag.mostTitles</h2>
+        <p style="color: #fff">En fazla başlığa sahip kategori</p>
+    </div>
+    <div class="col-md-3" style="text-align: center;background: #1f7bb8;margin: 2rem;">
+        <br />
+        <h2 style="color: #fff">@ViewBag.activeCategories</h2>
+        <p style="color: #fff">Aktif olan kategori</p>
+    </div>
+</div>

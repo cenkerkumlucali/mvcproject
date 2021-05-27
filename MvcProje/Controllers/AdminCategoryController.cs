@@ -57,6 +57,12 @@ namespace MvcProje.Controllers
             var categoryValue = categoryManager.GetByID(id);
             return View(categoryValue);
         }
+        [HttpPost]
+        public ActionResult EditCategory(Category category)
+        {
+            categoryManager.CategoryUpdate(category);
+            return RedirectToAction("Index");
+        }
 
     }
 }
